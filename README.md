@@ -29,19 +29,3 @@ Certifique-se de que o serviço MySQL está ativo antes de arrancar a API.
 
 ### Script de Criação das Tabelas
 O enriquecimento lógico pré-existente requer as seguintes tabelas no banco `biblioteca`
-
-```sql
-CREATE TABLE autor (
-  id int NOT NULL AUTO_INCREMENT,
-  nome varchar(255) NOT NULL,
-  nacionalidade varchar(100) DEFAULT NULL,
-  PRIMARY KEY (id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-CREATE TABLE livro (
-  id int NOT NULL AUTO_INCREMENT,
-  titulo varchar(255) NOT NULL,
-  ano_publicacao int DEFAULT NULL,
-  genero varchar(100) DEFAULT NULL,
-  PRIMARY KEY (id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
